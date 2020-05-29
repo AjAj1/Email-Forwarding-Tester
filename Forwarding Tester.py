@@ -4,8 +4,8 @@ from colorama import init, Fore, Back, Style
 
 # Details of the Email Account You want to send the Emails from:
 	
-Username = 'forwardingtester1@gmail.com' # Insert Your Email Username Here
-Password = 'Forward1ngTest1!' # Insert Your Email Password Here
+Username = '' # Insert Your Email Username Here
+Password = '' # Insert Your Email Password Here
 
 # Script:
 	
