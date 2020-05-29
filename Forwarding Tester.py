@@ -16,10 +16,8 @@ count = 0
 while (count < Quantity):
 
 	count = count + 1
-
 	now = datetime.now()
 	current_time = now.strftime("%H:%M:%S")
-	
 	Subject = 'Email Successfully Received - '+str(count)
 	
 	try:
@@ -40,9 +38,7 @@ while (count < Quantity):
 	try:
 		server = zmail.server(Username, Password)
 		server.send_mail(Email, mail)
+		print('['+current_time+']'+ Fore.GREEN + ' Successfully Sent Email to: '+ Fore.WHITE +Email)
 
 	except:
-		print('['+current_time+']'+ Fore.YELLOW + ' Unable To Send Email!')
-		
-	print('['+current_time+']'+ Fore.GREEN + ' Successfully Sent Email to: '+ Fore.WHITE +Email)
-		
+		print('['+current_time+']'+ Fore.YELLOW + ' Unable To Send Email - '+Email)
